@@ -1,0 +1,97 @@
+@charset "utf-8";
+body{  background-color: #eff4f7!important;  }
+/*==============
+基础相关样式
+ =============*/
+html{  font-size: 14px;overflow-x: hidden;  }
+body{margin:0; padding:0; color:#414141;min-width:320px;height: auto;overflow-x: hidden; }
+body,button,input,select,textarea{font:14px verdana,"\5FAE\8F6F\96C5\9ED1",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53";}
+input,select,textarea{font-size:100%; }
+a{ color:#666; text-decoration:none;}
+img{ vertical-align:top; border:0;}
+ul,li,ol,dl,dt,dd{margin:0; padding:0; list-style:none;}
+p{margin:0px;padding: 0px;}
+input{  -webkit-appearance: none;  }
+a:hover{  text-decoration:none;  }
+
+/*==============
+头部导航栏相关样式
+ =============*/
+.head-box{  width: 100%;  height: 50px;  z-index: 50;  position: relative;  }
+#navbar-right{  margin-left: 600px;  }
+.head-box>.container>.navbar{  background-color: #041618!important;  }
+#head-box-contaner{  width: 100%;  height: 50px;  margin: auto;  padding:0;  margin: 0;  }
+.head-logo-img{  float: left;  height: 40px;  margin-top: 5px;  }
+#bs-example-navbar-collapse-1 .nav>li:hover .dropdown-menu{  display: block;  }
+.dropdown-menu>li:hover {  font-size: 18px;  }
+.dropdown>.dropdown-menu>li>a:hover{  background-color: #2b669a;  color: #ffffff;  }
+/*==============
+尾部导航栏相关样式
+ =============*/
+/*mobbile端*/
+@media (max-width:768px) {
+    .navbar-box{display: none}
+}
+.mobile-box{margin: 50px 0px}
+.mobile-item{margin-top: -20px!important;}
+.panel-body>li>a{font-family: 微软雅黑;}
+.panel-body>li{margin: 10px 0px}
+.panel-title>a{font-family: 微软雅黑;font-weight: bold}
+.panel-title:active{text-underline: none}
+/*web端*/
+@media (min-width: 768px) {
+    .mobile-box{display: none}
+}
+.navbar-box{  width: 100%;  border-top:1px solid #eeeff0;  background:#eff4f7;  padding-top:20px;  padding-bottom:80px;  font-family: 微软雅黑;  }
+.navbar-box .row li{  margin-bottom: 4px;  }
+.navbar-box .row li:first-child{  font-weight: bold;  font-size: 14px;  color: #0f0f0f;  margin-bottom: 10px;  }
+.contact .contact-tell{  font-size: 22px;  font-family: 微软雅黑;  }
+.navbar-box .row li>a{  font-family: 微软雅黑;  font-size: 10px;  color: #0f0f0f;  }
+.foot-box{  background-color: #eff4f7;  }
+
+
+/*==============
+登录，注册，忘记密码和重置密码 头尾，尾部导航栏相关样式
+ =============*/
+#top-content{  width: 100%;  }
+#footer{  margin-top: 80px;  }
+.footer-css{  font-size: 10px;  font-family: 微软雅黑;  }
+/*==============
+返回顶部相关样式
+ =============*/
+.back_top_div {transition: 0.5s;display: none;position: fixed;  bottom: 50px;  right: 40px; width: 75px;height: 75px;background-image: url("/static/index/images/ico/backTop.png");background-size: 100% 100%;z-index: 99999 }
+.back_top_div:hover{background-image: url("/static/index/images/ico/backTop_hover.png");cursor: pointer;transition: 0.5s }
+/*==============
+面包屑相关样式
+ =============*/
+.breadcrumb>li>a:hover{  text-decoration: none;  color: red;  }
+
+/*==============
+关于火影，咨询和视频的导航栏样式
+ =============*/
+.section-content-navbar{  height: 74px;  width: 100%;  }
+.section-content-navbar>.container{  height: 100px;  padding: 0;  }
+.section-content-navbar>.container>.row{  height: 50px;  width: 100%;  margin-left: 14px;  margin-top: 10px;  line-height: 50px;  }
+.section-content-navbar>.container button{  margin-right: 30px;  }
+.section-content-navbar>.container button:hover{  background-color: #f0ad4e;  }
+.section-content-navbar>.container button>a{  font-family: 微软雅黑;  text-decoration: none;  color: black;  }
+.active1{  background-color: #18ba9b;  border-radius: 5px!important;color: white  }
+/*.about_a{margin-left: 0px!important;}*/
+.about_a a{  border-radius: 5px!important;  }
+.about_a a:hover{  background-color: #18ba9b;  color: white;  }
+.dropdown-menu a:hover{  background-color: #18ba9b!important;  }
+
+.layer-mask{display: none;z-index: 99999;position: fixed;top: 0;left:0;width: 100%;height: 100%;background: #000;opacity: 0.5;}
+.layer-pop{display: none;z-index: 100000;position: fixed;top: 0;right: 0;left: 0;bottom: 0;margin: auto;width: 270px;height: 258px;}
+.layer-close{float: right;width: 24px;height: 24px;text-align: center;border-radius: 50%!important;border: 3px solid #fff;background: #eee;margin-right: -3px;margin-bottom: -11px;}
+.layer-close:hover{cursor: pointer;background: #ccc;color: #fff;}
+
+@media (max-width: 1000px) {
+    .section-content-navbar>.container>.row{margin-top: -5px}
+    .section-content-navbar{height: 50px}
+    .about_a a{  border-radius: 5px!important;width: 50px!important;font-size: 15px;height: 25px!important; line-height: 4px!important;padding-left: 10px!important;}
+    .about_a{margin-left: 0px!important;}
+
+    .back_top_div{width:40px;height: 40px;right: 20px;bottom: 60px}
+}
+

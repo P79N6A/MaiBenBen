@@ -1,0 +1,36 @@
+/*===========
+省市级相关样式
+ ==========*/
+/*web*/
+.service_custom{background-color: white}
+.service_ol{background-color: white;margin-top: 20px;padding: 0}
+.service_box{background-color: white;}
+.service_map{width: 100%; margin-top: 20px}
+.service_map_company{width:100%;height:400px;border:#ccc solid 1px;}
+.service_custom{margin-top:30px}
+.service_custom>h3{font-weight: bold;font-size: 20px;font-family: 微软雅黑;}
+.province-city{padding: 36px 0 10px 0}
+.province{margin-top: 4px; text-align: right;font-size: 20px;font-family: 微软雅黑}
+.service-row{text-align: center;color: red;font-size: 18px}
+/*mobile*/
+@media (max-width:768px) {
+    .province{font-size: 14px}
+}
+/*===========
+地图相关样式
+ ==========*/
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
+/*==============
+服务地点相关样式
+ =============*/
+.service-row{  width: 100%;  margin-top: 20px;  margin-bottom: 30px;  }
+.service_table_tr>td{  padding: 30px!important;  }
+.glyphicon-map-marker{  float:left ;  }
+.address_a{  font-size: 20px;  font-weight: bold;  margin-left: 40px;  margin-bottom: 10px;  font-family: 微软雅黑;  }
+.address_b{  margin-left: 40px;  }
+
+@media (max-width: 1000px) {
+    .service_map_company{display: none}
+}
